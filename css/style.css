@@ -1,0 +1,495 @@
+/* Global */
+
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans|Muli');
+ :root {
+    --primary_color: #969696;
+    --secondary-color: #b6d7a8ff;
+    --reg-font: 'Muli', sans-serif;
+    --enph_font: 'Encode Sans', sans-serif;
+}
+
+body {
+    font-family: var(--reg-font);
+    line-height: 1.2rem;
+}
+
+.dNone {
+    display: none !important;
+}
+
+.buton {
+    text-align: center;
+    display: inline-block;
+    margin: 2rem auto;
+    background-color: var(--secondary-color);
+    color: var(--primary_color);
+    font-weight: 500;
+    font-family: var(--enph_font);
+    text-decoration: none;
+    padding: 1rem;
+    width: 60%;
+    max-width: 260px;
+}
+
+.showIn {
+    animation: showIn 1s linear;
+    -webkit-animation: showIn 1s linear;
+}
+
+.animated {
+    transition: all 0.5s;
+}
+
+
+/* Nav */
+
+nav.navigation {
+    text-align: center;
+    position: fixed;
+    top: -6.5rem;
+    z-index: 10000;
+    width: 100%;
+}
+
+nav.navigation i {
+    width: 2rem;
+    padding: 0.5rem;
+    margin-top: -0.1rem;
+    color: var(--secondary-color);
+    font-size: 2rem;
+    background-color: var(--primary_color);
+    opacity: 0.9;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+nav.navigation ul {
+    margin: 0 auto;
+    width: 100%;
+    display: block;
+    background: var(--primary_color);
+    opacity: 0.9;
+    text-align: center;
+    padding: 0.2rem
+}
+
+nav#mainNav.noNav {
+    top: 0;
+}
+
+nav.navigation li {
+    margin: 0.3rem;
+}
+
+nav.navigation a {
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.parallax {
+    background-image: url(../img/headerBg.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* Header */
+
+header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+header h1,
+header p {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    margin: 1rem 0;
+    font-weight: 600;
+    font-family: var(--enph_font);
+    z-index: 100;
+}
+
+header p {
+    font-size: 1.5rem;
+    color: var(--primary_color)
+}
+
+
+/* Secciones - Generico */
+
+section {
+    display: grid;
+    padding: 1rem;
+    position: relative;
+}
+
+section.breaker::before,
+section.breaker::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section.breaker::before {
+    background-color: var(--primary_color);
+    width: 60vw;
+    height: 0.1rem;
+    margin-bottom: -0.05rem;
+}
+
+section.breaker::after {
+    background-color: var(--secondary-color);
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    margin-bottom: -0.3rem;
+}
+
+section h2 {
+    color: var(--secondary-color);
+    font-family: var(--enph_font);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+section p {
+    margin: 0.2rem 0;
+}
+
+
+/* Seccion About */
+
+section#about img {
+    width: 70%;
+    max-width: 250px;
+    border-radius: 50%;
+    margin: 1rem auto;
+}
+
+section#about div.infoWrapper {
+    margin: auto;
+}
+
+section#about li {
+    margin: 0.5rem 0;
+}
+
+section#about i {
+    color: var(--secondary-color);
+    margin: 0 1rem;
+}
+
+
+/* Section Skills */
+
+div.preSkills {
+    width: 100%;
+    height: 10vh;
+}
+
+section#skills li {
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+section#skills div.progress {
+    background-color: var(--primary_color);
+    width: 80%;
+    height: 0.5rem;
+    margin: auto;
+    margin-top: 0.5rem;
+    position: relative;
+    z-index: 10;
+}
+
+div.progress::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--secondary-color);
+    height: 100%;
+    z-index: 100;
+}
+
+div.prg1::before {
+    width: 90%
+}
+
+div.prg2::before {
+    width: 85%
+}
+
+div.prg3::before {
+    width: 75%
+}
+
+div.prg4::before {
+    width: 87%
+}
+
+div.prg5::before {
+    width: 65%
+}
+
+section#skills div.academyWrapper {
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+section#skills h3 {
+    font-size: 1.1rem;
+    font-family: var(--enph_font);
+    color: var(--primary_color);
+    margin-bottom: 0.2rem;
+}
+
+section#skills div.academyWrapper ul li {
+    text-align: left;
+    text-indent: 2rem;
+}
+
+
+/* Section Career */
+
+section#career p,
+section#career h3 {
+    text-indent: 2rem;
+}
+
+section#career h3 {
+    font-size: 1.1rem;
+    font-family: var(--enph_font);
+    color: var(--primary_color);
+    margin: 0.3rem 0;
+}
+
+
+/* Section Contact */
+
+section#contact form {
+    display: block;
+}
+
+.formGroup {
+    display: block;
+    max-width: 100% !important;
+}
+
+section#contact .formControl {
+    color: black;
+    font-family: var(--reg-font);
+    border-bottom: 1px solid var(--primary_color);
+    background-color: #f3efef6b;
+    display: block;
+    height: 2.5rem;
+    padding: 0.5rem;
+    width: 90%;
+    box-sizing: border-box;
+    resize: none;
+    margin: 0.5rem auto;
+}
+
+section#contact textarea.formControl {
+    height: 10rem;
+}
+
+section#contact .formControl:focus {
+    border: 2px solid var(--secondary-color);
+    outline: none;
+}
+
+section#contact button.button {
+    display: block;
+    background-color: var(--secondary-color);
+    color: var(--primary_color);
+    border: none;
+    padding: 1rem;
+    width: 90%;
+    margin: auto;
+    text-transform: uppercase;
+    font-family: var(--enph_font);
+    font-weight: 800;
+    cursor: pointer;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: var(--primary_color);
+    padding: 2rem;
+    text-align: center;
+}
+
+footer nav li {
+    display: inline-block;
+    margin: 1rem;
+}
+
+footer nav a {
+    font-size: 3rem;
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+footer nav span {
+    margin: 0 auto;
+    font-size: 0.7rem;
+    color: #dbdbdb;
+}
+
+footer nav strong {
+    color: var(--secondary-color);
+}
+
+
+/* toTop */
+
+i#toTop {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    width: 2rem;
+    padding: 0.5rem;
+    color: var(--secondary-color);
+    font-size: 2rem;
+    background-color: var(--primary_color);
+    opacity: 0.7;
+    border-radius: 0.5rem;
+    cursor: pointer
+}
+
+
+/* Media Queries RWD */
+
+@media (min-width: 576px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+    header p {
+        font-size: 1.5rem;
+    }
+    section#about {
+        grid-template-columns: 1fr 1fr;
+    }
+    section#about h2 {
+        grid-row: 1 / 1;
+        grid-column: 1 / 3;
+    }
+    section#about p {
+        grid-column: 1 / 3;
+    }
+}
+
+@media (min-width: 768px) {
+    nav#mainNav {
+        top: 0;
+        left: 0;
+    }
+    nav#mainNav ul.onTop {
+        /* background: transparent; */
+        opacity: 0;
+    }
+    nav#mainNav ul li {
+        display: inline-block;
+        margin: 0.5rem 1rem;
+    }
+    nav#mainNav a.active {
+        border-bottom: 2px solid var(--secondary-color);
+    }
+    nav#mainNav i {
+        display: none;
+    }
+    section {
+        padding: 1rem 3rem;
+    }
+    section#skills {
+        grid-template-columns: 1fr 1.5fr;
+    }
+    section#skills h2 {
+        grid-column: 1/3
+    }
+    section#skills div.academyWrapper {
+        margin-top: 0;
+    }
+    section#skills div.skillsWrapper {
+        margin: auto 0;
+    }
+    section#contact div.formGroup {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    section#contact div.formGroup label {
+        padding: 1rem;
+    }
+}
+
+@media (min-width: 992px) {
+    body {
+        font-size: 120%;
+        ;
+    }
+    header h1 {
+        font-size: 5rem;
+        margin: 2rem;
+    }
+    header p {
+        font-size: 3rem;
+        margin: 2rem;
+    }
+    section {
+        max-width: 1000px;
+        margin: 0 auto;
+        grid-gap: 1rem;
+    }
+}
+
+
+/* Animaciones */
+
+@keyframes showIn {
+    0% {
+        opacity: 0;
+        transform: scale(0%)
+    }
+    90% {
+        opacity: 0.7;
+        transform: scale(110%)
+    }
+}
+
+@-webkit-keyframes showIn {
+    0% {
+        opacity: 0;
+        transform: scale(0%)
+    }
+    90% {
+        opacity: 0.7;
+        transform: scale(110%)
+    }
+}
