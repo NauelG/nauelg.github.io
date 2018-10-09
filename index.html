@@ -1,19 +1,183 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Página personal de NauelG en GitHub</title>
+<html lang="es">
 
-    <link rel="stylesheet" href="CSS/normalize.css">
-    <link rel="stylesheet" href="CSS/maincss.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  </head>
-  <body>
-    <header>
-      <h1>NauelG en GitHub</h1>
-    </header>
-    <footer>
+    <meta name="author" content="Nauel Gamero">
+    <meta name="description" content="Práctica del módulo de fundamentos de HTML, CSS y JS para el Bootcamp Web de Keep Coding">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <title>Nauel Gamero - Desarrollador Web</title>
 
-    </footer>
-  </body>
+    <link href="https://fonts.googleapis.com/css?family=Encode+Sans|Muli" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+    <!-- import Js -->
+    <script src="./js/app.js" type="module"></script>
+</head>
+
+<body>
+
+</body>
+
+
+<nav id="mainNav" class="navigation animated">
+
+    <ul class="animated onTop">
+        <li>
+            <a class="" href="#about">Sobre Mi</a>
+        </li>
+        <li>
+            <a href="#skills">Habilidades</a>
+        </li>
+        <li>
+            <a href="#career">Experiencia</a>
+        </li>
+        <li>
+            <a href="#contact">Contacto</a>
+        </li>
+    </ul>
+    <i class="fas fa-bars navIcon" id="btnNav"></i>
+</nav>
+<header class="parallax" id="home">
+    <h1>Nauel Gamero</h1>
+    <p class="showIn">Desarrollador Web</p>
+</header>
+
+
+
+<section class="breaker" id="about">
+    <h2>Sobre Mi</h2>
+    <p>
+        Curioso y apasionado. La pasión es el ingrediente necesario para progresar continuamente y la curiosidad nos hace descubrir nuevos caminos para hacerlo.
+    </p>
+    <p>
+        Tras un tiempo dedicado a la gestión en retail/hostelería y muy ligado al ámbito empresarial, la curiosidad me ha hecho formarme en aquello que me apasiona, el código, la informática y, en general, todo aquello que entienda de 0s y 1s.
+    </p>
+    <p>
+        Amante del deporte, la montaña, la família y motero adicto declarado.
+    </p>
+    <img src="./img/profileImg.jpg" alt="Foto de Perfil de Nauel Gamero">
+    <div class="infoWrapper">
+        <ul>
+            <li><i class="fas fa-map-marked-alt"></i> Girona, España</li>
+            <li><i class="fas fa-phone"></i> 690.043.082</li>
+            <li><i class="fas fa-birthday-cake"></i> Julio 1991</li>
+            <li><i class="fas fa-envelope-open"></i> g.nauel@gmail.com</li>
+        </ul>
+    </div>
+</section>
+
+<section class="breaker" id="skills">
+    <h2>Formación</h2>
+    <div class="skillsWrapper">
+        <ul>
+            <li>HTML / CSS
+                <div class="progress prg1"></div>
+            </li>
+            <li>Javascript
+                <div class="progress prg2"></div>
+            </li>
+            <li>Node.JS
+                <div class="progress prg3"></div>
+            </li>
+            <li>Angular
+                <div class="progress prg4"></div>
+            </li>
+            <li>SEO
+                <div class="progress prg5"></div>
+            </li>
+        </ul>
+    </div>
+    <div class="academyWrapper">
+        <ul>
+            <li>
+                <h3>2018 Keep Coding</h3>Web Startup Engineering Bootcamp</li>
+            <li>
+                <h3>2017 Fernando Herrera - Udemy</h3>Curso de Angular Avanzado (MEAN)</li>
+            <li>
+                <h3>2017 Fernando Herrera - Udemy</h3>Curso de Principios de Angular</li>
+            <li>
+                <h3>2017 Hector Costa - Udemy</h3>Curso de Fundamentos de Python</li>
+            <li>
+                <h3>2017 Javier Vilena - Udemy</h3>Curso de Fundamentos de HTML, CSS y JS</li>
+        </ul>
+    </div>
+</section>
+
+<section class="breaker" id="career">
+    <h2>Experiéncia</h2>
+    <h3>09/2014 - Actualidad: PdePA Coffee Bakery, Lloret de Mar (Girona)</h3>
+    <p>
+        Creación y consolidación de la marca PdePA Coffee Bakery y de su modelo de negocio desde sus inicios hasta la consolidación del quinto local propio, trabajando diversas áreas de la empresa dependiendo de su ciclo de vidatales como compras, producción,
+        producto, expansión, IT y dirección.</p>
+    <p> Actualmente la empresa se encuentra en fase de expansión y me encargo de desarrollar el área de franquicia como Director de Expansión planificando y llevando a cabo todas las fases que componen la apertura de una nueva unidad franquiciada.
+    </p>
+    <h3>11/2013 - 09/2014: DTSgrup, Vidreres (Girona)</h3>
+    <p>
+        Gestión administrativa en empresa de construcción desarrollando tareas de conciliación bancaria, facturación, presupuestos, gestión de clientes, control de cobros y pagos, trabajos de dibujo vectorial, etc.
+    </p>
+
+    <a href="https://drive.google.com/file/d/1mz6PZgsNnBxRAq5uwT7maopdDZTKRd4B/view?usp=sharing" class="buton" target="_blank">Accede mi CV en pdf</a>
+</section>
+
+<section id="contact">
+    <h2>¿Hablamos?</h2>
+    <form action="" id="contactForm">
+        <div class="formGroup">
+            <label for="iName">Nombre</label>
+            <input class="formControl" type="text" id="iName" name="iName" required>
+        </div>
+        <div class="formGroup">
+            <label for="iMail">Correo</label>
+            <input class="formControl" type="email" name="iMail" id="iMail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+        </div>
+        <div class="formGroup">
+            <label for="iKnown">¿Cómo me has conocido?</label>
+            <select class="formControl" name="iKnown" id="iKnown">
+                <option value="lkdn">LinkedIn</option>
+                <option value="ijobs">Infojobs</option>
+                <option value="gith">GitHub</option>
+                <option value="other">Otros</option>
+            </select>
+        </div>
+        <div id="groupOtherKnow" class="formGroup dNone">
+            <label for="otherKnow">¿Cómo?</label>
+            <input class="formControl" type="text" id="otherKnow" name="otherKnow">
+        </div>
+        <div class="formGroup">
+            <label for="iTel">Teléfono</label>
+            <input class="formControl" type="tel" name="iTel" id="iTel" pattern="[0-9]{9}" required>
+        </div>
+        <div class="formGroup">
+            <label for="iComent">Cuéntame algo</label>
+            <textarea class="formControl" name="iComent" id="iComent"></textarea>
+        </div>
+        <button type="submit" class="button" id="send">Enviar</button>
+    </form>
+</section>
+
+<footer>
+    <nav>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/nauelg" target="_blank" title="linkedIn"><i class="fab fa-linkedin"></i></a></li>
+            <li>
+                <a href="https://twitter.com/GNauel" target="_blank" title="Twitter"><i class="fab fa-twitter-square"></i></a>
+            </li>
+            <li>
+                <a href="https://github.com/NauelG/" target="_blank" title="GitHub"><i class="fab fa-github-square"></i></a>
+            </li>
+        </ul>
+        <span>Todos los derechos reservados © 2018 | Página creada por <strong>Nauel G.</strong></span>
+    </nav>
+</footer>
+
+<i id="toTop" class="fas fa-chevron-up dNone showIn animated"></i>
+
 </html>
